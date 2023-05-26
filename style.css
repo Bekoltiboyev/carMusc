@@ -1,0 +1,588 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+body{
+    background:  #1E1E1E;
+    font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+    padding: 0;
+}
+.header{
+    height: auto;
+    background-image: url('./rasm/Rectangle\ 64.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: space-between;
+    padding-bottom: 50px;
+}
+.banner{
+    height: auto;
+    padding: 20px 0;
+}
+.banner .banner-title{
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 125%;
+    text-align: center;
+    color: #DB3138;
+}
+.banner .banner-text{
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.bannerBtn{
+    text-align: center;
+}
+.banner-btn{
+    font-family: 'Roboto Mono', monospace;
+    width: 220px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+.banner-btn::before{
+    content: '';
+    width:  0%;
+    height: 0%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width .3s ease-in;
+    z-index: 1;
+}
+.banner-btn:hover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+}
+.banner-btn span{
+    z-index: 2;
+    position: relative;
+}
+
+.cards{
+    height: 213px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards .card-title{
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cards .cards-text{
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+.part1{
+    background: #1E1E1E;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+}
+.card1 h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+.card1 img{
+    padding: 60px 0;
+}
+.card-box{
+    width: 100%;
+    justify-content: center;
+}
+.card1 p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+}
+.box-in{
+    width: 230px;
+    height: 180px;
+    background: transparent;
+    border: 0.2px solid grey;
+    color: red;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+.box-in small, .box-in h2{
+    display: inline-block;
+    color: red;
+}
+.box-in p{
+    color: white;
+    width: 90%;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+.boxes1{
+    padding-top: 70px;
+    width: 100%;
+    justify-content: center;
+}
+.boxes{
+    width: 100%;
+    justify-content: center;
+}
+.car-boxes{
+    width: 300px;
+    height: 300px;
+    background-color: inherit;
+    position: relative;
+}
+.car{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.car-boxes img{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+.car-boxes p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    height: auto;
+    margin-top: -25px;
+    z-index: 1;
+    transition: 2s ease-in-out;
+    position: absolute;
+
+}
+.car-boxes p:hover{
+    background-color: red;
+}
+.rasm i{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* Part 3 */
+.part3-container{
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+}
+.part3{
+    width: 70%;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.part3 h3{
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+}
+.part3 p{
+    color: white;
+    font-size: 14px;
+    text-align: start;
+    line-height: normal;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.cubic{
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.ikkinchi-line h3, .birinchi-line h3, .uchinchi-line h3{
+    margin-left: 20px;
+    display: inline-block;
+}
+.birinchi-line, .ikkinchi-line, .uchinchi-line{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    align-items: start;
+}
+
+.part3-2{
+    justify-content: center;
+}
+.part3-2 img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.padt4-title{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.part4-image{
+    display: block;
+    margin: 30px auto;
+}
+.part4-button{
+   text-align: center;
+}
+.btn1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: inherit;
+    border: none;
+    transition: 2s;
+}
+.btn2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: inherit;
+    border: none;
+    transition: 2s;
+    margin-left: 20px;
+}
+.btn1:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+.btn2:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+.part4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.part4 .box{
+    width: 300px;
+    height: auto;
+    border: 1px solid white;
+    text-align: center;
+    padding: 30px;
+}
+.part4 .box img{
+    width: 40px;
+    height: 40px;
+}
+.part4 .box p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.part4 .box span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: start;
+}
+.mini-btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    background: none;
+    border: none;
+    transition: 1.5s;
+    width: 140px;
+}
+.mini-btn:hover{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+.part5{
+    width: 70%;
+    height: auto;
+    margin: 100px auto;
+}
+.part5-box1 img{
+    width: 100%;
+}
+.part5-box1 p{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+.part5-box2{
+    padding-left: 20px;
+}
+.box2-birinchi-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.box2-birinchi-line h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.part5-box2 p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    justify-content: center;
+}
+.part5-cubic{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.box2-ikkinchi-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.box2-ikkinchi-line h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.box2-ikkinchi-line p{
+    margin-top: 10px;
+}
+.box2 .uchinchi-line{
+    display: flex;
+    flex-direction: row;
+}
+.uchinchi-line{
+    align-items: center;
+    margin-top: -20px;
+}
+.uchinchi-line h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.uchinchi-line p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.part6{
+    justify-content: center;
+}
+.part6 h2{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+
+}
+.part6 img{
+    display: block;
+    margin: 0 auto;
+}
+.car-rasm{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.car-rasm img{
+    width: 233px;
+}
+.lasth2{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.cubic6{
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+::placeholder{
+    color: white !important;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.form-box img{
+    width: 45px;
+    padding: 5px;
+}
+.form1 input{
+    color: white !important;
+}
+.footer{
+    height: auto;
+    padding: 20px 0;
+    border-top: 2px solid grey;
+    margin-top: 80px;
+}
+.footer p{
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+@media screen and (max-width:768px) {
+    .form-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .form-box img{
+        width: 60px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
